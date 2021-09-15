@@ -1,11 +1,9 @@
 import torchvision
 import torch
 import os
-import matplotlib.pyplot as plt
 import torch.nn as nn
+from numpy import ndarray
 from torchvision import transforms
-import random
-from scipy import ndarray
 import skimage as sk
 from skimage import transform
 from skimage import util
@@ -180,9 +178,6 @@ for i in range(len(strep_names)):
     img = torchvision.io.read_image(strep_folder + strep_names[i])
     img = p(img)
     strep[i] = img
-
-import numpy as np
-import scipy as sp
 
 healthy_folder = '/home/rxb5452/Desktop/Deep Learning/Medical Imaging/data/healthy/'
 strep_folder = '/home/rxb5452/Desktop/Deep Learning/Medical Imaging/data/strep/'

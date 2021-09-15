@@ -2,43 +2,21 @@ import torch as torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-
 import torchvision
-import torchvision.transforms as transforms
-
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
-from sklearn.metrics import confusion_matrix
-#from plotcm import plot_confusion_matrix
-
-import pdb
-
-torch.set_printoptions(linewidth=120)
-
+from IPython.core.display import display
 from collections import OrderedDict
 from collections import namedtuple
 from itertools import product
-
 import time
-
-from torch.utils.tensorboard import SummaryWriter
-
 from IPython.display import clear_output
-
 import json
-
-import matplotlib.pyplot as plt
-
-from sklearn.metrics import confusion_matrix
-
-import itertools
-import numpy as np
-import matplotlib.pyplot as plt
+from torch.utils.tensorboard import SummaryWriter
 from torchvision import datasets, transforms
 
-import cv2
+
+torch.set_printoptions(linewidth=120)
+
 
 data_dir = '/home/rxb5452/Desktop/Deep Learning/Medical Imaging/processed_data/'
 
